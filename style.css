@@ -40,18 +40,7 @@ h1, h2 {
     text-align: center;
 }
 
-.jelo {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    margin: 10px;
-}
 
-.jelo img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
 
 .jelo img:hover {
     transform: scale(1.1);
