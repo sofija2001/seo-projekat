@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-image: url('pozadina.jpg');
@@ -13,6 +12,7 @@ header nav ul {
     background-color: #c0392b;
     list-style: none;
     padding: 10px;
+    margin: 0;
 }
 
 header nav ul li {
@@ -38,12 +38,45 @@ main {
 
 h1, h2 {
     text-align: center;
+    margin-top: 0;
 }
 
+/* sekcija sa jelima da bi tri .jelo stala u jedan red */
+section:first-of-type {
+    text-align: center;
+    font-size: 0;
+}
 
+.jelo {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.jelo img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    display: block;
+}
 
 .jelo img:hover {
     transform: scale(1.1);
+}
+
+.centar-tekst {
+    text-align: center;
+}
+
+#slika {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 form {
@@ -86,15 +119,6 @@ footer {
     width: 100%;
 }
 
-.centar-tekst {
-    text-align: center;
-}
-
-#slika {
-    display: block;
-    margin: 0 auto;
-}
-
 input:focus {
     outline: 2px solid #c0392b;
     background-color: #f1c40f;
@@ -103,26 +127,3 @@ input:focus {
 header nav ul li:nth-child(odd) {
     background-color: #e74c3c;
 }
-.jelo {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    text-align: center;
-    margin: 0 1%;
-    box-sizing: border-box;
-}
-
-.jelo img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.jelo img:hover {
-    transform: scale(1.1);
-}
-section {
-    text-align: center;
-    white-space: normal;
-}
-
