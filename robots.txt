@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sofija2001.github.io/seo-projekat/sitemap.xml
